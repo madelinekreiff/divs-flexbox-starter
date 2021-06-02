@@ -102,6 +102,7 @@ html {
 }
 
 body {
+  background-color: rgb(240, 239, 172);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25em;
   height: 100%;
@@ -110,34 +111,56 @@ body {
 
 .wrapper {
   display: flex;
+  flex-flow: row wrap;
   font-weight: 700;
   justify-content: space-between;
 }
 
+header, main, footer {
+  align-items: center;
+  color: rgb(5, 62, 167);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  font-size: 3em;
+  height: 50px;
+}
+
+main {
+  font-weight: 400;
+  height: 120px;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
 .div-1, .div-2, .div-3 {
   align-items: center;
+  background-color: rgb(50, 92, 170);
+  border: 5px solid rgb(245, 222, 13);
+  color: rgb(245, 222, 13);
   display: flex;
+  font-size: 0.95em;
+  font-weight: 400;
   height: 300px;
   justify-content: center;
   line-height: 1.5em;
+  margin: 20px 0;
   text-align: center;
   width: 30%;
 }
 
-.div-1, .div-3 {
-    background-color: rgb(235, 233, 151);
-    border: 5px solid rgb(5, 62, 167);
-    color: rgb(5, 62, 167);
-    font-size: 0.9em;
-}
-
 .div-2 {
-    background-color: rgb(5, 62, 167);
-    border: 5px solid rgb(245, 222, 13);
-    color: rgb(245, 222, 13);
-    font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 700;
 }
 
+footer {
+  font-size: 0.6em;
+  height: 40px;
+  }
 
 /* ==========================================================================
    Helper classes
